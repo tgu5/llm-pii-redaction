@@ -23,7 +23,7 @@ class GPTChat:
         
         self.redactor.clear()
         redacted_input = self.redactor.redact(user_input['prompt'])
-        print('\nredacted input sent to GPT: ', redacted_input)
+        print('\nredacted input sent to GPT: ', redacted_input) # comment out for black-boxing
         self.messages.append({"role": "user", "content": redacted_input})
 
         try:
@@ -37,14 +37,15 @@ class GPTChat:
 
             # Accumulate the complete response while streaming
             complete_response = ""
-            print("\n------------------------Redacted response stream-------------------------------\n", end="", flush=True)
+            
+            # comment out for black-boxing
+            print("\n------------------------Redacted response stream-------------------------------\n", end="", flush=True) 
             
             for chunk in response:
                 if chunk.choices[0].delta.content is not None:
                     content = chunk.choices[0].delta.content
                     complete_response += content
-                    print(content, end="", flush=True)
-            
+                    print(content, end="", flush=True) # comment out for black-boxing
             print("------------------------------------------------------------------------------------------------\n")  # New line after response is complete
             
             # Unredact the complete response and update conversation history
