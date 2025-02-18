@@ -2,12 +2,10 @@
 
 ## Demo
 ### with detailed redaction-unredaction process:
-
-<video src="https://github.com/user-attachments/assets/72e02ddd-c632-4173-980b-29d1446235ef" />
+<video src="https://github.com/user-attachments/assets/72e02ddd-c632-4173-980b-29d1446235ef"></video>
 
 ### user-facing "black-boxed" API:
-
-<video src="https://github.com/user-attachments/assets/6c153787-1c3c-47a4-9470-465666aa59d1" />
+<video src="https://github.com/user-attachments/assets/6c153787-1c3c-47a4-9470-465666aa59d1"></video>
 
 
 ## Overview
