@@ -11,5 +11,5 @@ if __name__ == "__main__":
     requests = load_requests('requests.csv')
     for r in requests:
         response = chat_session.chat(r)
-        print(f"Response: {response}")
+        print(f"\nResponse: {response}")
 

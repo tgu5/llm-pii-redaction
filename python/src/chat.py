@@ -17,7 +17,7 @@ class GPTChat:
         :param max_tokens: The maximum number of tokens to generate.
         :return: The complete unredacted response from GPT.
         """
-        print('New chat! User input: ', user_input)
+        print('\nNew chat! User input: ', user_input)
         # Update system message with the provided system prompt
         self.messages[0]["content"] = user_input['system_prompt']
         
@@ -37,7 +37,7 @@ class GPTChat:
 
             # Accumulate the complete response while streaming
             complete_response = ""
-            
+
             # comment out for black-boxing
             print("\n------------------------Redacted response stream-------------------------------\n", end="", flush=True) 
             
@@ -53,6 +53,7 @@ class GPTChat:
             self.messages.append({"role": "assistant", "content": unredacted_reply})
             
             return "\n------------------------Unredacted response stream-------------------------------\n" + unredacted_reply + ("\n-----------------------------------------\n")
+            # return unredacted_reply
 
         except Exception as e:
             print(f"\nError: {e}\n")
