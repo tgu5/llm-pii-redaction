@@ -13,7 +13,7 @@ The program will:
 1. Load requests from `requests.csv`
 2. Automatically redact sensitive information before sending to GPT
 3. Process each request through GPT-4
-4. Unredact the information in the response
+4. Unredact the information in the response which is limited to 100 tokens for now
 5. Print each response
 
 ## Project Structure
@@ -32,6 +32,7 @@ The program will:
 - run from root folder: `python python/src/main.py`
 
 ## Further Improvements:
+- max_tokens is set to 100 for each response, but it should be dynamically adjusted according to prompts
 - handle more PII types in `redactor.py` like credit card info, physical address, DOB, etc.
 - make user-facing API also answer in stream by handling edge cases like split redacted string in two streams
 - implement robust error handling for rate limit or user input type error
