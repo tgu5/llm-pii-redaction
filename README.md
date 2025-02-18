@@ -32,5 +32,7 @@ The program will:
 - run from root folder: `python python/src/main.py`
 
 ## Further Improvements:
-- handle more PII types in `redactor.py`
+- handle more PII types in `redactor.py` like credit card info, physical address, DOB, etc.
 - make user-facing API also answer in stream by handling edge cases like split redacted string in two streams
+- implement robust error handling for rate limit or user input type error
+- for extra security, encrypt sensitive data in memory
