@@ -1,5 +1,16 @@
 # takehome-pii-redaction
 
+## Demo
+### with detailed redaction-unredaction process:
+
+<video src="https://github.com/user-attachments/assets/72e02ddd-c632-4173-980b-29d1446235ef" />
+
+### user-facing "black-boxed" API:
+
+<video src="https://github.com/user-attachments/assets/6c153787-1c3c-47a4-9470-465666aa59d1" />
+
+
+## Overview
 The program will:
 1. Load requests from `requests.csv`
 2. Automatically redact sensitive information before sending to GPT
@@ -21,3 +32,7 @@ The program will:
 - use a venv: `python -m venv venv && source venv/bin/activate`
 - install packages: `pip install -r python/requirements.txt`
 - run from root folder: `python python/src/main.py`
+
+## Further Improvements:
+- handle more PII types in `redactor.py`
+- make user-facing API also answer in stream by handling edge cases like split redacted string in two streams
