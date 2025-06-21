@@ -1,4 +1,4 @@
-# takehome-pii-redaction
+# llm-pii-redaction
 
 The program will:
 1. Load requests from `requests.csv`
@@ -17,7 +17,7 @@ The program will:
 
 ## How To Run:
 - clone repo
-- `cd credal-ai-takehome`
+- `cd llm-pii-redaction`
 - use a venv: `python -m venv venv && source venv/bin/activate`
 - install packages: `pip install -r python/requirements.txt`
 - run from root folder: `python python/src/main.py`
