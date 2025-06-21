@@ -2,6 +2,8 @@
 
 This project implements a simple redaction pipeline that detects and redacts personally identifiable information (PII) from user-submitted requests before sending them to a Large Language Model (LLM). After receiving a response from the LLM, the system reconstructs the original content by unredacting the placeholders back into their original values. This was originally built as part of a take-home engineering assignment.
 
+https://github.com/user-attachments/assets/8b0e7069-9265-4ef2-bae7-f4d7b96a0c22
+
 ## Problem Overview
 
 Many enterprises want to avoid exposing sensitive data (e.g. SSNs, phone numbers, email addresses) to external LLM providers. This project simulates a middleware service that:
